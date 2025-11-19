@@ -1,9 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // --- CONFIGURATION ---
 const PORT = 3000;
-const MONGO_URI = "mongodb://127.0.0.1:27017/ShoppyGlobe_Backend";
+// const MONGO_URI = "mongodb://127.0.0.1:27017/ShoppyGlobe_Backend";
+const MONGO_URI = "mongodb+srv://hrudendu2050:Wrm638Hj4v68sNGW@cluster1.dzxwbsf.mongodb.net/";
 // ---------------------
 
 // Import routes
@@ -15,6 +17,7 @@ const app = express();
 
 // Middleware
 app.use(express.json()); // To parse JSON request bodies
+app.use(cors()); //Enables CORS middleware
 
 // --- Database Connection ---
 mongoose.connect(MONGO_URI)
