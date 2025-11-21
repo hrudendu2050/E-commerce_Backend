@@ -2,6 +2,7 @@
 This is the backend of ShoppyGlobe E-coomerce application. This is built using Node.js, Express, MongoDB and JWT authorization.
 
 # Setup
+- github download link: https://github.com/hrudendu2050/E-commerce_Backend.git
 - Extract the folder and open the terminal in the folder
 - Install node modules: `npm install`
 - Start the server: `npm start`
